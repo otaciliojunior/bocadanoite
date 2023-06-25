@@ -1,0 +1,380 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .black-section {
+    background-image: url(image/boca-da-noite.png);
+    color: #fff;
+    padding: 50px;
+    height: 300px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .name {
+    letter-spacing: 2px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+
+  
+  .image-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .white-section {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: left;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  .pizza-blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+.pizza-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.pizza-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.pizza-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.pizza-block {
+flex-basis: calc(50% - 80px);
+border: 1.5px solid #dc0000;
+padding: 20px;
+border-radius: 20px;
+text-align: center;
+display: inline;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 30px;
+position: relative;
+top: 50px;
+margin-left: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.pizza-block img {
+margin-bottom: 15px;
+margin-right: 5px;
+margin-left: 3px;
+}
+
+.pizza-block-bottom {
+margin-top: 20px;
+}
+
+#img-pizza{
+  width: 80%;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.quemsomosnos{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+
+.quemsomosnos-text{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.listas{
+margin-top: 50px;
+text-align: center;
+letter-spacing: 3px;
+text-indent: -50px; /* Ajuste o valor conforme necessário */
+}
+
+.btao{
+  display: flex;
+  justify-content: center;
+  padding: 18px 33px;
+  border: 2px solid rgb(220, 0, 0);
+  border-radius: 50px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  text-align: center;
+  padding: 18px 33px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  position: relative;
+  margin: 30px auto;
+}
+
+.terceira-divisao{
+background-image: url(image/uma-pessoa-segurando-pizza.webp);
+height: 600px;
+background-color: rgba(0, 0, 0, 0.102); /* Cor preta com 50% de transparência */
+}
+.quarta-divisao{
+background-color: rgb(255, 255, 255);
+height: 300px;
+
+}
+
+#mlhregion{
+font-size: 30px;
+margin-top: 80px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+letter-spacing: 1px;
+margin-left: 20px;
+font-weight: 400; /* Afinamento leve */
+}
+
+.bloco {
+background-color: rgba(255, 255, 255, 0.113);
+border-radius: 10px;
+padding: 40px;
+text-align: center;
+display: inline-block;
+margin: 10px;
+margin-block: 50px;
+margin-left: 40px;
+margin-top: 30px;
+}
+
+.menu {
+font-family: Arial, sans-serif;
+}
+
+.item {
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.texto-principal {
+padding-right: 10px;
+margin-top: 50px;
+margin-left: 20px;
+}
+
+.seta {
+width: 10px;
+height: 10px;
+border-right: 2px solid black;
+border-bottom: 2px solid black;
+transform: rotate(45deg);
+transition: transform 0.3s ease-in-out;
+margin-top: 35px;
+margin-left: 10px;
+}
+
+.informacoes {
+display: none;
+margin-top: 15px;
+margin-left: 20px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu.active .seta {
+transform: rotate(225deg);
+}
+
+.menu.active .informacoes {
+display: block;
+}
+
+
+.menu {
+font-family: Arial, sans-serif;
+}
+
+.item {
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.texto-principal {
+padding-right: 10px;
+margin-top: 50px;
+margin-left: 20px;
+}
+
+.seta {
+width: 10px;
+height: 10px;
+border-right: 2px solid black;
+border-bottom: 2px solid black;
+transform: rotate(45deg);
+transition: transform 0.3s ease-in-out;
+margin-top: 35px;
+margin-left: 10px;
+}
+
+.informacoes {
+display: none;
+margin-top: 15px;
+margin-left: 20px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu.active .seta {
+transform: rotate(225deg);
+}
+
+.menu.active .informacoes {
+display: block;
+}
+
+
+.menu01 {
+    font-family: Arial, sans-serif;
+    }
+    
+    .item01 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+    .texto-principal01 {
+    padding-right: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+    }
+    
+    .seta01 {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 35px;
+    margin-left: 16px;
+    }
+    
+    .informacoes01 {
+    display: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .menu01.active .seta01 {
+    transform: rotate(225deg);
+    }
+    
+    .menu01.active .informacoes01 {
+    display: block;
+    }
+
+    .quinta-divisao {
+        background-image: url(image/bloco004.webp);
+        height: 800px;
+        position: relative;
+        margin-top: 90px;
+        text-decoration: #fff;
+      }
+      
+      .content {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 80px;
+        border-radius: 10px;
+        color: #fff;
+        
+      }
+      
+      .content h2 {
+        text-align: center;
+      }
+      
+      .content ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .content li {
+        margin-bottom: 10px;
+      }
+
+      .cookie-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.711);
+        z-index: 9999;
+      }
+      
+      .cookie-popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      
+      .cookie-popup-buttons {
+        margin-top: 20px;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      
+    
+
+    

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cardápio - Boca da Noite</title>
+  <link rel="stylesheet" type="text/css" href="cardapio.css">
+</head>
+<body>
+  <div class="cardapio">
+    <div class="item">
+      <span>Pizza de Calabresa - 25$</span>
+      <button onclick="adicionarProduto('Calabresa', 25)">Adicionar</button>
+    </div>
+    <div class="item">
+      <span>Pizza de Mussarela - 22$</span>
+      <button onclick="adicionarProduto('Mussarela', 22)">Adicionar</button>
+    </div>
+    <div class="item">
+      <span>Pizza de Frango com Catupiry - 27$</span>
+      <button onclick="adicionarProduto('Frango com Catupiry', 27)">Adicionar</button>
+    </div>
+
+    <div id="valorTotal">Valor total: R$ 0</div>
+
+    <div>
+      <label for="formaPagamento">A forma de pagamento será em espécie ou PIX? <br></label>
+      <select id="formaPagamento" onchange="mostrarOpcoesPagamento()">
+        <option value="null"></option>
+        <option value="especie">Espécie</option>
+        <option value="pix">PIX</option>
+      </select>
+    </div>
+
+    <div id="pixContainer" style="display: none;">
+      <p>QR Code para PIX:</p>
+      <img src="image-cardapio/chavepix-qrcode.jpeg" alt="QR Code PIX" id="qrcode">
+      <p>Ou pague por este link : <a href="ttps://nubank.com.br/pagar/67goh/q9XR2FUMoj" id="linkPix">ttps://nubank.com.br/pagar/67goh/q9XR2FUMoj</a></p>
+    </div>
+
+    <div id="trocoContainer" style="display: none;">
+      <label for="troco">E aí, precisa de troco? Se sim, quanto?</label>
+      <input type="text" id="troco">
+    </div>
+
+    <button onclick="enviarPedido()">Enviar</button>
+  </div>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>
